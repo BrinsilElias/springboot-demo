@@ -10,7 +10,7 @@ import java.util.List;
 public class StudentService {
 
     private final StudentRepository studentRepository;
-    public List<Student> getAllStudents() {
+    public List<Students> getAllStudents() {
         return studentRepository.findAll();
     }
 }

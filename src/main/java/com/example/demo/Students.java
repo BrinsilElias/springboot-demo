@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @Document
-public class Student {
+public class Students {
     @Id
     private String id;
     private String firstname;
@@ -14,7 +14,7 @@ public class Student {
     private String email;
     private Gender gender;
 
-    public Student(String firstname, String lastname, String email, Gender gender) {
+    public Students(String firstname, String lastname, String email, Gender gender) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;

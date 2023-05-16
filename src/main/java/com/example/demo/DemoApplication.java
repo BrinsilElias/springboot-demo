@@ -16,15 +16,14 @@ public class DemoApplication {
 	@Bean
 	CommandLineRunner runner(StudentRepository repository) {
 		return args -> {
-			Student student = new Student(
-					"Brinsil",
-					"Elias",
-					"brinsilelias01@gmail.com",
-					Gender.MALE
+			Students student = new Students(
+					"Sandra",
+					"Sathish",
+					"sandrasathish01@gmail.com",
+					Gender.FEMALE
 			);
 
 			repository.insert(student);
 		};
 	}
-
 }
